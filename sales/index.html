@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Needs Parent Guide — Navigate the IEP Process With Confidence</title>
+  <meta name="description" content="The complete resource guide for special needs parents. 85+ pages, 25+ templates, 12+ sample letters. Master IEP meetings and advocate for your child. From $19." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #059669;
+      --green-dark: #047857;
+      --green-light: #d1fae5;
+      --teal: #0d9488;
+      --dark: #111827;
+      --gray: #6b7280;
+      --light: #f9fafb;
+    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--dark); background: #fff; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0 1.5rem;
+    }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-size: 1.05rem; font-weight: 800; color: var(--green); display: flex; align-items: center; gap: 0.5rem; }
+    .nav-cta { background: var(--green); color: #fff; padding: 0.5rem 1.25rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--green-dark); }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 50%, #f0fdfa 100%); padding: 5rem 1.5rem 4rem; text-align: center; }
+    .hero-badge { display: inline-block; background: var(--green-light); color: var(--green); border-radius: 100px; padding: 0.35rem 1rem; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 900; line-height: 1.15; margin-bottom: 1.25rem; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .hero h1 span { color: var(--green); }
+    .hero p { font-size: 1.15rem; color: var(--gray); max-width: 580px; margin: 0 auto 2rem; }
+    .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--green); color: #fff; padding: 0.9rem 2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; transition: background 0.2s, transform 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-outline { border: 2px solid #d1d5db; color: var(--dark); padding: 0.9rem 2rem; border-radius: 10px; font-weight: 600; font-size: 1rem; transition: border-color 0.2s; display: inline-block; }
+    .btn-outline:hover { border-color: var(--green); color: var(--green); }
+
+    /* STATS */
+    .stats-bar { background: #111827; padding: 2.5rem 1.5rem; }
+    .stats-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; text-align: center; }
+    .stat-num { font-size: 2.2rem; font-weight: 900; color: #34d399; }
+    .stat-label { font-size: 0.85rem; color: #9ca3af; margin-top: 0.25rem; }
+
+    /* SECTIONS */
+    section { padding: 4.5rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-tag { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem; }
+    .section-title { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+    .section-sub { font-size: 1.05rem; color: var(--gray); max-width: 600px; }
+
+    /* PROBLEM */
+    .problem-bg { background: var(--light); }
+    .problem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .problem-card { background: #fff; border-radius: 14px; padding: 1.75rem; border: 1px solid #e5e7eb; }
+    .problem-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1rem; }
+    .problem-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .problem-card p { font-size: 0.88rem; color: var(--gray); }
+
+    /* WHO */
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+    .who-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .who-check { width: 28px; height: 28px; background: var(--green-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--green); font-weight: 700; font-size: 0.9rem; }
+    .who-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .who-item p { font-size: 0.875rem; color: var(--gray); }
+
+    /* WHATS INSIDE */
+    .inside-bg { background: var(--light); }
+    .inside-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .inside-card { background: #fff; border-radius: 14px; padding: 1.75rem; border: 1px solid #e5e7eb; transition: box-shadow 0.2s; }
+    .inside-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .inside-card-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 1rem; }
+    .inside-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .inside-card p { font-size: 0.875rem; color: var(--gray); }
+    .bg-green { background: var(--green-light); }
+    .bg-blue { background: #dbeafe; }
+    .bg-purple { background: #ede9fe; }
+    .bg-amber { background: #fef3c7; }
+    .bg-pink { background: #fce7f3; }
+    .bg-teal { background: #ccfbf1; }
+
+    /* BENEFITS */
+    .benefits-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media (max-width: 768px) { .benefits-layout { grid-template-columns: 1fr; } }
+    .benefits-list { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
+    .benefit-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .benefit-check { width: 24px; height: 24px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 0.75rem; font-weight: 700; margin-top: 0.1rem; }
+    .benefit-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.2rem; }
+    .benefit-item p { font-size: 0.875rem; color: var(--gray); }
+    .testimonial-card-green { background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%); border-radius: 20px; padding: 2rem; color: #fff; }
+    .stars-white { color: #fff; font-size: 1.1rem; margin-bottom: 1rem; }
+    .testimonial-card-green p { font-size: 1rem; line-height: 1.65; margin-bottom: 1.5rem; opacity: 0.95; }
+    .reviewer-row { display: flex; align-items: center; gap: 0.75rem; }
+    .reviewer-avatar { width: 44px; height: 44px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+    .reviewer-name { font-weight: 600; }
+    .reviewer-role { font-size: 0.85rem; opacity: 0.75; }
+
+    /* TESTIMONIALS */
+    .testimonials-bg { background: #111827; color: #fff; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+    .t-card { background: #1f2937; border-radius: 14px; padding: 1.75rem; }
+    .t-stars { color: #fbbf24; margin-bottom: 0.75rem; font-size: 1rem; }
+    .t-card p { font-size: 0.9rem; color: #d1d5db; font-style: italic; margin-bottom: 1.25rem; }
+    .t-reviewer { display: flex; align-items: center; gap: 0.75rem; }
+    .t-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; color: #fff; }
+    .t-name { font-size: 0.9rem; font-weight: 600; }
+    .t-role { font-size: 0.8rem; color: #6b7280; }
+
+    /* PRICING */
+    #pricing { background: linear-gradient(180deg, #fff 0%, var(--light) 100%); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.75rem; max-width: 950px; margin: 2.5rem auto 0; }
+    .price-card { background: #fff; border-radius: 18px; padding: 2rem; border: 2px solid #e5e7eb; position: relative; transition: box-shadow 0.2s; }
+    .price-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .price-card.featured { border-color: var(--green); box-shadow: 0 8px 30px rgba(5,150,105,0.15); transform: scale(1.02); }
+    .popular-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--green); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.3rem 1rem; border-radius: 100px; white-space: nowrap; }
+    .price-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 0.35rem; }
+    .price-card .price-desc { font-size: 0.875rem; color: var(--gray); margin-bottom: 1rem; }
+    .price-card .price { font-size: 3rem; font-weight: 900; color: var(--green); line-height: 1; }
+    .price-card .price-note { font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem; }
+    .price-card ul { list-style: none; margin-bottom: 1.75rem; }
+    .price-card li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.875rem; margin-bottom: 0.6rem; color: #374151; }
+    .price-card li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
+    .price-btn { display: block; width: 100%; padding: 0.9rem; border-radius: 10px; font-weight: 700; font-size: 0.95rem; text-align: center; cursor: pointer; border: none; transition: opacity 0.2s, transform 0.2s; }
+    .price-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+    .price-btn-primary { background: var(--green); color: #fff; }
+    .price-btn-outline { border: 2px solid #d1d5db; background: transparent; color: var(--dark); }
+    .price-btn-outline:hover { border-color: var(--green); color: var(--green); }
+    .pricing-trust { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.75rem; font-size: 0.85rem; color: var(--gray); }
+    .trust-item { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* FAQ */
+    .faq-list { max-width: 720px; margin: 2.5rem auto 0; }
+    .faq-item { border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; margin-bottom: 0.75rem; }
+    .faq-q { width: 100%; text-align: left; padding: 1.1rem 1.25rem; background: #fff; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; border: none; }
+    .faq-q:hover { background: var(--light); }
+    .faq-a { padding: 0 1.25rem 1.1rem; background: var(--light); font-size: 0.875rem; color: var(--gray); display: none; line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-chevron { font-size: 0.75rem; transition: transform 0.2s; flex-shrink: 0; }
+
+    /* CTA */
+    .cta-section { background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%); color: #fff; text-align: center; }
+    .cta-section h2 { font-size: clamp(1.5rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 1rem; max-width: 650px; margin-left: auto; margin-right: auto; }
+    .cta-section p { color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 2rem; font-size: 1.05rem; }
+    .btn-white { background: #fff; color: var(--green); padding: 0.9rem 2rem; border-radius: 10px; font-weight: 700; font-size: 1rem; display: inline-block; transition: background 0.2s; }
+    .btn-white:hover { background: #f0fdf4; }
+
+    /* FOOTER */
+    footer { background: #111827; color: #6b7280; padding: 3rem 1.5rem; text-align: center; font-size: 0.85rem; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-logo { color: #d1d5db; font-weight: 700; font-size: 1rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; }
+    .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: #9ca3af; transition: color 0.2s; }
+    .footer-links a:hover { color: #fff; }
+
+    @media (max-width: 600px) {
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .price-card.featured { transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">&#x2665; Special Needs Parent Guide</div>
+    <a href="#pricing" class="nav-cta">Get Instant Access</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">Trusted by 2,500+ parents nationwide</div>
+  <h1>Navigate the IEP Process<br>with <span>Confidence</span></h1>
+  <p>The complete resource guide for special needs parents. Expert guidance on IEP meetings, your legal rights under IDEA, therapy coordination, and advocating for your child's educational success.</p>
+  <div class="hero-buttons">
+    <a href="#pricing" class="btn-primary">Get Your Guide &#x2192;</a>
+    <a href="#whats-inside" class="btn-outline">See What's Inside</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">85+</div>
+      <div class="stat-label">Pages of guidance</div>
+    </div>
+    <div>
+      <div class="stat-num">25+</div>
+      <div class="stat-label">Ready-to-use templates</div>
+    </div>
+    <div>
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Action checklists</div>
+    </div>
+    <div>
+      <div class="stat-num">2,500+</div>
+      <div class="stat-label">Happy parents</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem-bg">
+  <div class="container">
+    <div class="section-tag">The Problem</div>
+    <div class="section-title">You Shouldn't Have to Navigate This Alone</div>
+    <p class="section-sub">As a special needs parent, you already have enough on your plate. The IEP process shouldn't add more stress.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon bg-pink">📄</div>
+        <h3>Overwhelming Paperwork</h3>
+        <p>IEP documents are dense and confusing. Knowing what to ask for and how to document your concerns feels impossible.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon bg-amber">👥</div>
+        <h3>Intimidating Meetings</h3>
+        <p>Walking into a room full of school professionals can feel like you're outmatched. You deserve to be an equal partner.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon bg-purple">🛡️</div>
+        <h3>Uncertainty About Rights</h3>
+        <p>You know your child deserves more, but you're not sure exactly what you're entitled to under IDEA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section>
+  <div class="container">
+    <div class="section-tag">Who It's For</div>
+    <div class="section-title">This Guide Is For You If...</div>
+    <div class="who-grid">
+      <div class="who-item">
+        <div class="who-check">✓</div>
+        <div>
+          <h3>You're a first-time IEP parent</h3>
+          <p>You just learned your child qualifies for special education services and feel lost. This guide gives you a clear roadmap from the very first meeting.</p>
+        </div>
+      </div>
+      <div class="who-item">
+        <div class="who-check">✓</div>
+        <div>
+          <h3>You've been through IEPs before</h3>
+          <p>You want to be more effective. Get advanced advocacy strategies, better templates, and concrete scripts for difficult conversations.</p>
+        </div>
+      </div>
+      <div class="who-item">
+        <div class="who-check">✓</div>
+        <div>
+          <h3>You're managing multiple IEPs</h3>
+          <p>Multiple children or multiple plans? The binder organization system (Premium) keeps everything at your fingertips across school years.</p>
+        </div>
+      </div>
+      <div class="who-item">
+        <div class="who-check">✓</div>
+        <div>
+          <h3>You're a special education professional</h3>
+          <p>Advocates, consultants, and coaches can use the Premium package with white-label rights for their clients and training programs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section id="whats-inside" class="inside-bg">
+  <div class="container">
+    <div class="section-tag">What's Inside</div>
+    <div class="section-title">Everything You Need to Succeed</div>
+    <p class="section-sub">A comprehensive collection of guides, templates, and tools developed by parents who have been through the IEP process.</p>
+    <div class="inside-grid">
+      <div class="inside-card">
+        <div class="inside-card-icon bg-green">📗</div>
+        <h3>Complete IEP Guide</h3>
+        <p>85+ pages covering everything from eligibility to annual reviews and dispute resolution. Written in plain language — not legal jargon.</p>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-icon bg-blue">📋</div>
+        <h3>Meeting Preparation</h3>
+        <p>Step-by-step checklists and scripts to help you prepare for every IEP meeting stage — annual reviews, evaluation meetings, placement decisions.</p>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-icon bg-purple">🛡️</div>
+        <h3>Advocacy Strategies</h3>
+        <p>Proven techniques for communicating with school staff, raising concerns constructively, and escalating when needed without burning bridges.</p>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-icon bg-teal">👨‍⚕️</div>
+        <h3>Therapy Coordination</h3>
+        <p>Managing multiple therapists and ensuring the full team — OT, SLP, PT, school staff — stays aligned on goals and progress.</p>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-icon bg-pink">📝</div>
+        <h3>Ready-to-Use Templates</h3>
+        <p>25+ fillable PDF templates: IEP prep, goal data collection, progress tracking, communication logs, behavior tracking forms, and more.</p>
+      </div>
+      <div class="inside-card">
+        <div class="inside-card-icon bg-amber">✉️</div>
+        <h3>12+ Sample Letters</h3>
+        <p>Proven letter templates for requesting meetings, requesting evaluations, responding to prior written notices, and formal dispute resolution.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section>
+  <div class="container">
+    <div class="benefits-layout">
+      <div>
+        <div class="section-tag">Benefits</div>
+        <div class="section-title">Stop Dreading IEP Season. Start Collaborating.</div>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div>
+              <h3>Walk into every meeting prepared</h3>
+              <p>Our checklists and scripts ensure you never forget an important question or lose track of what was agreed.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div>
+              <h3>Understand your legal rights</h3>
+              <p>IDEA explained in plain language so you know exactly what your child is entitled to and when schools must comply.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div>
+              <h3>Build productive relationships</h3>
+              <p>Learn to collaborate with school staff while still advocating effectively — without the adversarial dynamic that holds outcomes back.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-check">✓</div>
+            <div>
+              <h3>Save hours of research</h3>
+              <p>Everything you need is in one place — no more searching the internet for conflicting answers at midnight before a meeting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="testimonial-card-green">
+          <div class="stars-white">★★★★★</div>
+          <p>"This guide gave me the confidence to speak up in IEP meetings. I went from feeling intimidated to feeling like an equal team member."</p>
+          <div class="reviewer-row">
+            <div class="reviewer-avatar">MT</div>
+            <div>
+              <div class="reviewer-name">Maria T.</div>
+              <div class="reviewer-role">Parent of a 9-year-old with autism</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-bg">
+  <div class="container">
+    <div class="section-tag" style="color:#34d399;">What Parents Say</div>
+    <div class="section-title" style="color:#fff;">Loved by Parents Everywhere</div>
+    <div class="testimonials-grid">
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p>"The templates alone were worth the investment. Having everything organized made such a difference in our annual review. I felt like I actually belonged in that room."</p>
+        <div class="t-reviewer">
+          <div class="t-avatar" style="background:var(--green);">DR</div>
+          <div>
+            <div class="t-name">David R.</div>
+            <div class="t-role">Parent of a 12-year-old with ADHD</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p>"I used to dread IEP season. Now I actually look forward to collaborating with the school team. This guide completely changed my approach and my results."</p>
+        <div class="t-reviewer">
+          <div class="t-avatar" style="background:#7c3aed;">JL</div>
+          <div>
+            <div class="t-name">Jennifer L.</div>
+            <div class="t-role">Parent of a 7-year-old with Down syndrome</div>
+          </div>
+        </div>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p>"As a first-time IEP parent, I was completely lost. This guide walked me through every step and I finally felt prepared to advocate for my daughter."</p>
+        <div class="t-reviewer">
+          <div class="t-avatar" style="background:#2563eb;">SM</div>
+          <div>
+            <div class="t-name">Sarah M.</div>
+            <div class="t-role">Parent of a 5-year-old with speech delays</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">Pricing</div>
+    <div class="section-title">Choose Your Package</div>
+    <p class="section-sub" style="margin:0 auto 0;">One-time payment. Instant download. 30-day money-back guarantee.</p>
+
+    <div class="pricing-grid">
+      <!-- Essential -->
+      <div class="price-card">
+        <h3>Essential</h3>
+        <div class="price-desc">Perfect for parents new to the IEP process</div>
+        <div class="price">$19</div>
+        <div class="price-note">one-time</div>
+        <ul>
+          <li>Complete 85+ page PDF guide</li>
+          <li>4 essential templates</li>
+          <li>Progress monitoring tracker</li>
+          <li>Communication log template</li>
+          <li>Email support</li>
+        </ul>
+        <a href="#" class="price-btn price-btn-outline">Get Essential</a>
+      </div>
+
+      <!-- Complete -->
+      <div class="price-card featured">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Complete</h3>
+        <div class="price-desc">Everything you need to confidently advocate</div>
+        <div class="price">$47</div>
+        <div class="price-note">one-time</div>
+        <ul>
+          <li>Everything in Essential, plus:</li>
+          <li>All 15+ fillable PDF templates</li>
+          <li>12+ sample letters</li>
+          <li>Behavior tracking forms</li>
+          <li>Goal data collection sheets</li>
+          <li>IEP meeting agenda template</li>
+          <li>Priority email support</li>
+        </ul>
+        <a href="#" class="price-btn price-btn-primary">Get Complete</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="price-card">
+        <h3>Premium</h3>
+        <div class="price-desc">Full toolkit with professional rights</div>
+        <div class="price">$97</div>
+        <div class="price-note">one-time</div>
+        <ul>
+          <li>Everything in Complete, plus:</li>
+          <li>Full binder organization system</li>
+          <li>Therapy coordination forms</li>
+          <li>Mediation &amp; complaint templates</li>
+          <li>White-label rights</li>
+          <li>Lifetime updates</li>
+          <li>Priority 1-on-1 support</li>
+        </ul>
+        <a href="#" class="price-btn price-btn-outline">Get Premium</a>
+      </div>
+    </div>
+
+    <div class="pricing-trust">
+      <div class="trust-item">🔒 Secure payment</div>
+      <div class="trust-item">⬇️ Instant download</div>
+      <div class="trust-item">❤️ 30-day money-back guarantee</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:#fff; padding: 4.5rem 1.5rem;">
+  <div class="container" style="text-align:center;">
+    <div class="section-tag">FAQ</div>
+    <div class="section-title">Frequently Asked Questions</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What's the difference between Essential, Complete, and Premium?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Essential includes the core 85+ page guide plus 4 essential templates. Complete adds all 15+ fillable templates, all 12+ sample letters, behavior tracking forms, goal data sheets, and priority support. Premium includes everything plus a full binder organization system, therapy coordination forms, mediation templates, white-label rights, and lifetime updates.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Can I share the templates with my child's school?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">In Essential and Complete, templates are for personal use with your own child. The Premium package includes white-label rights, allowing you to use and adapt the materials in your professional practice or training programs.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Is this guide applicable in all US states?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Yes. While some procedures may vary slightly by state, IDEA is a federal law that applies nationwide. The guide focuses on federal requirements while noting state-specific variations where relevant.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What format is the guide delivered in?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">The complete guide is delivered as a professional PDF you can view on any device, print at home, or take to meetings. All templates in Complete and Premium are included as fillable PDF forms.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you offer refunds?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Yes — 30-day money-back guarantee on all packages. If you're not completely satisfied, simply contact us and we'll issue a full refund. No questions asked.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How soon will I get access after purchasing?
+          <span class="faq-chevron">▼</span>
+        </button>
+        <div class="faq-a">Immediately. You'll receive an email with a secure download link right after payment completes. You can download your materials up to 5 times within 7 days, or contact support if you need extended access.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Take Control of Your Child's IEP Journey?</h2>
+    <p>Join thousands of parents who have navigated the IEP process with confidence. Your child's education is worth it.</p>
+    <a href="#pricing" class="btn-white">Get Started Now</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">&#x2665; Special Needs Parent Guide</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>&copy; 2026 AI Microtech Link. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
